@@ -1,0 +1,13 @@
+.project-desc{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    max-height : 30px;
+    overflow: hidden;
+    transition: max-height 800ms ease;
+    padding: 0px 40px;
+}
+
+.project-desc-open{
+    max-height: 300px;
+}

@@ -1,0 +1,17 @@
+#about{
+    max-height: 0px;
+    font-size: 25px;
+    font-weight: 600;
+    overflow: hidden;
+    transition: 500ms;
+    color: transparent;
+    padding: 0px 30px;
+}
+
+.open{
+    max-height: fit-content !important;
+    padding: 30px !important;
+    border-bottom: 5px solid #000;
+    color: #000 !important;
+    
+}
