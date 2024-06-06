@@ -2,37 +2,34 @@ import '../styles/Banner.css';
 import { useEffect, useState } from 'react';
 
 function Banner() {
-    const welcomeMessage = "Hello, my name is Muriel. I am a swiss designer. Welcome to my portfolio.";
-    const [i, setI] = useState(0);
+    const welcomeMessage = "Hello, my name is Muriel. I am a Swiss designer. Welcome to my portfolio.";
+    const [displayedMessage, setDisplayedMessage] = useState("");
 
     useEffect(() => {
-        const container = document.getElementById('container');
-
         const animIntro = setInterval(() => {
-            if (container && i < welcomeMessage.length) {
-                container.innerHTML += welcomeMessage[i];
-                setI(i => i + 1);
-            } else {
-                clearInterval(animIntro);
-            }
+            setDisplayedMessage(prev => {
+                if (prev.length < welcomeMessage.length) {
+                    return welcomeMessage.slice(0, prev.length + 1);
+                } else {
+                    clearInterval(animIntro);
+                    return prev;
+                }
+            });
         }, 50);
 
         return () => clearInterval(animIntro); // Cleanup interval on component unmount
-    }, [i, welcomeMessage]);
+    }, [welcomeMessage]);
 
-
-    useEffect ( () => {
+    useEffect(() => {
         const banner = document.getElementById('banner');
-        banner.classList.add('anim-intro')
-        
-    } )
-
+        banner.classList.add('anim-intro');
+    }, []);
 
     return (
         <div>
             <div id="banner" className="banner">
                 <div className="hidden">{welcomeMessage}</div>
-                <h1 id="container"></h1>
+                <h1 id="container" aria-live="polite">{displayedMessage}</h1>
             </div>
         </div>
     );
