@@ -1,0 +1,56 @@
+.project-carousel{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+img{
+    height: 100%;
+}
+
+.left-btn{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: 2px solid #000;
+    background-color: #fff;
+    
+    z-index: 10;
+}
+
+.left-btn:hover{
+    background-color: #ff95f5;
+}
+
+.left-btn img{
+    width: 15px;
+}
+
+
+
+/* Suggest CSS to be custom*/
+
+
+.carousel-content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+    
+
+.carousel-item {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+    left: 0;
+    top: 0;
+}
+
+.carousel-item.active {
+    opacity: 1;
+}

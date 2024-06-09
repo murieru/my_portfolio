@@ -1,3 +1,6 @@
+import placeholder from "../assets/exemple_01.jpg"
+import placeholder_2 from "../assets/logo.svg"
+
 export const projectList = [
 
     {
@@ -7,7 +10,7 @@ export const projectList = [
         date: "2024",
         description: 'Lorem ipsum description...',
         text: 'Lorem Ipsum text',
-        imageId: 'cover'
+        imageId: [placeholder, placeholder, placeholder, placeholder]
     },
 
     {
@@ -17,7 +20,7 @@ export const projectList = [
         date: "2024",
         description: 'Lorem ipsum description...',
         text: 'Lorem Ipsum text',
-        imageId: 'cover'
+        imageId: [placeholder_2, placeholder]
     },
 
     {
@@ -27,7 +30,7 @@ export const projectList = [
         date: "2024",
         description: 'Lorem ipsum description...',
         text: 'Lorem Ipsum text',
-        imageId: 'cover'
+        imageId: ['exemple_01.jpg']
     },
 
     {
@@ -37,7 +40,7 @@ export const projectList = [
         date: "2024",
         description: 'Lorem ipsum description...',
         text: 'Lorem Ipsum text',
-        imageId: 'cover'
+        imageId: ['exemple_01.jpg']
     },
 
     {
@@ -47,7 +50,7 @@ export const projectList = [
         date: "2024",
         description: 'Lorem ipsum description...',
         text: 'Lorem Ipsum text',
-        imageId: 'cover'
+        imageId: ['exemple_01.jpg']
     },
 
     {
@@ -57,7 +60,7 @@ export const projectList = [
         date: "2024",
         description: 'Lorem ipsum description...',
         text: 'Lorem Ipsum text',
-        imageId: 'cover'
+        imageId: ['exemple_01.jpg']
     },
 
 

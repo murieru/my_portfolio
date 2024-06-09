@@ -1,12 +1,14 @@
 import '../styles/Projects.css'
 import {projectList} from '../data/projectList.js'
 import Project from './Project.js'
+import { useState } from 'react';
 
 function Projects({currentCategory, setCategory}){
 
     function openClose(id){
         document.getElementById(id).classList.toggle('project-desc-open');
     }
+
 
     return(
 
@@ -26,7 +28,7 @@ function Projects({currentCategory, setCategory}){
                 category={project.category}
                 description={project.description}
                 text={project.test}
-                imageid={project.imageId}
+                imageId={project.imageId}
             />
         </li>
     ))}
