@@ -22,7 +22,7 @@ function Carousel ({id, title, category, date, description, text, imageId}){
             <div className='carousel-content'  style={{ transform: `translateX(-${currentIndex * (100/imageId.length)}%)` }}>
 
                 {imageId.map((image, index) => (
-                    <img key={image.id} src={image} className={`carousel-item ${index === currentIndex ? 'active' : ''}`}/>
+                    <img alt={image.imageId} key={image} src={image} className={`carousel-item ${index === currentIndex ? 'active' : ''}`}/>
                 )
                 )}
 

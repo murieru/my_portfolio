@@ -1,7 +1,6 @@
 import '../styles/Projects.css'
 import {projectList} from '../data/projectList.js'
 import Project from './Project.js'
-import { useState } from 'react';
 
 function Projects({currentCategory, setCategory}){
 
@@ -40,25 +39,3 @@ function Projects({currentCategory, setCategory}){
 }
 
 export default Projects
-
-
-
-/* OLD UL without className transition effects (working)
-        <ul>
-            {projectList.map((project) => (
-                project.category.some(cat => currentCategory.includes(cat)) ? (
-                    <li className='project-box' key={project.id} onClick={() => openClose(project.id)}>
-                        <Project                     
-                            id={project.id}
-                            title={project.title}
-                            date={project.date}
-                            category={project.category}
-                            description={project.description}
-                            text={project.test}
-                            imageid={project.imageId}
-                        />
-                    </li>
-                ) : null
-            ))}
-        </ul>
-*/

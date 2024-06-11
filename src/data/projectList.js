@@ -1,6 +1,3 @@
-import placeholder from "../assets/exemple_01.jpg"
-import placeholder_2 from "../assets/logo.svg"
-
 import SONENSTUBE_01 from "../assets/01_SONENSTUBE_01.jpg"
 import SONENSTUBE_02 from "../assets/01_SONENSTUBE_02.jpg"
 import SONENSTUBE_03 from "../assets/01_SONENSTUBE_03.jpg"
