@@ -16,7 +16,7 @@ function Carousel ({id, title, category, date, description, text, imageId}){
 
         <div className='project-carousel'>
 
-            <span className='left-btn' onClick={nextSlide}><img src={arrow} /></span>
+            <span className='left-btn' onClick={nextSlide}><img alt="" src={arrow} /></span>
 
 
             <div className='carousel-content'  style={{ transform: `translateX(-${currentIndex * (100/imageId.length)}%)` }}>
