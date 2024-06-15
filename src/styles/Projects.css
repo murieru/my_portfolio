@@ -8,16 +8,17 @@
     border-bottom: solid 5px #000;
     margin: 0px;
     overflow: hidden;
-    max-height: 500px;
     transition: max-height 5s ease;
 }
 
+/*
 .project-box:hover{
     background-color: #ff95f5;
     color: #fff;
     cursor: pointer;
     transition:400ms;
 }
+*/
 
 ul{
     display: flex;
@@ -40,4 +41,15 @@ h3{
     border: none;
     transition: max-height 0.3s ease;
     opacity: 0%;
+}
+
+/*///// MOBILE VERSION /////*/
+
+@media (max-width: 480px) {
+
+    .project-box{
+        width: 100vw;
+        overflow: hidden;
+    }
+
 }

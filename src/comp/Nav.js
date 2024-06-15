@@ -12,7 +12,6 @@ function Nav(){
             <ul>
                 <li onClick={() => openMenu('about')}>about</li>
                 <li onClick={() => openMenu('category')}>projects</li>
-                <li>clients</li>
                 <li>contact</li>
             </ul>
         </div>

@@ -15,3 +15,19 @@
     color: #000 !important;
     
 }
+
+/*///// MOBILE VERSION /////*/
+
+@media (max-width: 480px) {
+
+    #about{
+        max-height: 0px;
+        font-size: 20px;
+        font-weight: 600;
+        overflow: hidden;
+        transition: 500ms;
+        color: transparent;
+        padding: 0px 30px;
+    }
+
+}

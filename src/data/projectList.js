@@ -13,6 +13,10 @@ import MORCOTE_01 from "../assets/03_MORCOTE_01.jpg"
 import MORCOTE_02 from "../assets/03_MORCOTE_02.jpg"
 import MORCOTE_03 from "../assets/03_MORCOTE_03.jpg"
 import MORCOTE_04 from "../assets/03_MORCOTE_04.jpg"
+import MORCOTE_05 from "../assets/03_MORCOTE_05.jpg"
+import MORCOTE_06 from "../assets/03_MORCOTE_06.jpg"
+import MORCOTE_07 from "../assets/03_MORCOTE_07.jpg"
+
 
 import DARTE_01 from "../assets/04_DARTE_01.jpg"
 import DARTE_02 from "../assets/04_DARTE_02.jpg"
@@ -33,7 +37,7 @@ export const projectList = [
     {
         id: '007',
         title: 'Sonnenstube',
-        category: ['photography'],
+        category: ['photography','code','ux/ui'],
         date: "2012-2020",
         description: 'Archive photography for the independent art space Sonnenstube in Lugano',
         text: 'I have been working for several year to document the art exibithion of Sonnenstube, an indipendent art space in Ticino',
@@ -42,12 +46,12 @@ export const projectList = [
 
     {
         id: '008',
-        title: 'Morcote\'s Bienale',
+        title: 'Morcote Bienale',
         category: ['graphic design'],
         date: "2016 - 2028 – 2020",
         description: 'Visual identity and segnalitic parcour in the beautiful village of Morcote, Ticino',
         text: 'Creation of a visual identity for the Morcote\'s Bienale from the first to the third edition.',
-        imageId: [MORCOTE_01, MORCOTE_02, MORCOTE_03, MORCOTE_04]
+        imageId: [MORCOTE_01, MORCOTE_02, MORCOTE_03, MORCOTE_04, MORCOTE_05, MORCOTE_06, MORCOTE_07]
     },
 
     {

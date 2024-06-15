@@ -16,10 +16,11 @@ function Project({id, title, category, date, description, text, imageId}){
 
             <div className='project-desc-box'>
                 <h3>{title}</h3>                
-        
-                {date}
-                <br/>
-                {description}
+                <div className='content'>
+                    <span className='date'>[{date}]</span>
+                    <br/>
+                    {description}
+                </div>
             </div>
 
             {!isClosed && (

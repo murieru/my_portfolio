@@ -7,6 +7,7 @@
     font-size: 30px;
     font-weight: 600;
     border-bottom: 5px solid #000;
+    overflow: hidden;
 }
 
 #nav ul{
@@ -27,4 +28,31 @@
 #nav li:hover{
     background-color: #ff95f5;;
     color: rgb(255, 255, 255);
+}
+
+
+/*///// MOBILE VERSION /////*/
+
+@media (max-width: 480px) {
+
+    #nav{
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        height: 30px;
+        color: #000000;
+        font-size: 20px;
+        font-weight: 600;
+        border-bottom: 5px solid #000;
+        overflow: hidden;
+    }
+
+    #nav li {
+        display: block;
+        padding: 0px 30px;
+        cursor: pointer;
+        margin: 0px;
+        height: 100%;
+    }
+
 }

@@ -54,3 +54,21 @@ img{
 .carousel-item.active {
     opacity: 1;
 }
+
+
+/*///// MOBILE VERSION /////*/
+
+@media (max-width: 480px) {
+
+    img{
+        height: 500px;
+    }
+
+    .left-btn img{
+        height: 30px;
+    }
+    
+    .left-btn{
+        margin-left: 10px
+    }
+}

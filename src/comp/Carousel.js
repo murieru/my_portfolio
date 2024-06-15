@@ -11,6 +11,11 @@ function Carousel ({id, title, category, date, description, text, imageId}){
         e.stopPropagation();
     };
 
+    const focusItem = (e) => {
+        console.log('hello')
+        e.stopPropagation();
+    }
+
     return (
 
 
@@ -18,11 +23,10 @@ function Carousel ({id, title, category, date, description, text, imageId}){
 
             <span className='left-btn' onClick={nextSlide}><img alt="" src={arrow} /></span>
 
-
             <div className='carousel-content'  style={{ transform: `translateX(-${currentIndex * (100/imageId.length)}%)` }}>
 
                 {imageId.map((image, index) => (
-                    <img alt="" key={image} src={image} className={`carousel-item ${index === currentIndex ? 'active' : ''}`}/>
+                    <img alt="" key={image} src={image} className={`carousel-item ${index === currentIndex ? 'active' : ''}`} onClick={focusItem}/>
                 )
                 )}
 

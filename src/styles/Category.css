@@ -64,3 +64,32 @@ label:hover{
     cursor: pointer;
     border-color: transparent;
 }
+
+
+/*///// MOBILE VERSION /////*/
+
+@media (max-width: 480px) {
+
+    #category{
+        flex-direction: column;
+        font-size: 20px;
+        padding: 0px 20px !important;
+    }
+
+    #category ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #category label{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 10px 15px;
+        margin: 5px;
+        border-radius: 25px;
+        border: #000 3px solid;
+    }
+    
+}
