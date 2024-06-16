@@ -3,7 +3,7 @@ import '../styles/Carousel.css'
 import arrow from '../assets/arrow-right.svg'
 import { useMediaQuery } from 'react-responsive';
 
-function Carousel ({id, title, category, date, description, text, imageId}){
+function Carousel ({id, title, category, date, description, text, imageId, video}){
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const isMobile = useMediaQuery({ query: '(max-width: 480px)' });
@@ -22,7 +22,14 @@ function Carousel ({id, title, category, date, description, text, imageId}){
 
             <div className='carousel-content'  style={{ transform: `translateX(-${currentIndex * (100/imageId.length)}%)` }}>
 
-                {imageId.map((image, index) => ( 
+                {video.map((video, index) => (
+
+                <video key={video} height="300" width="410" onClick={nextSlide} autoPlay loop><source src={video} type="video/mp4" /></video>
+
+                )
+                )}
+
+                {imageId.map((image, index) => (
 
                 isMobile ? (
                     <div key={image} style={{ backgroundImage: `url(${image})` }} className={`carousel-item ${index === currentIndex ? 'active' : ''}`} onClick={nextSlide}></div>

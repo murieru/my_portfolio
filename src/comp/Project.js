@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/Project.css'
 import Carousel from './Carousel'
 
-function Project({id, title, category, date, description, text, imageId}){
+function Project({id, title, category, date, description, text, imageId, video}){
 
     const [isClosed, setIsClosed] = useState(true);
 
@@ -32,6 +32,7 @@ function Project({id, title, category, date, description, text, imageId}){
                 description={description}
                 text={text}
                 imageId={imageId}
+                video={video}
                 />
             )}
 

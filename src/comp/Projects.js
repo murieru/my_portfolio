@@ -28,6 +28,7 @@ function Projects({currentCategory, setCategory}){
                 description={project.description}
                 text={project.test}
                 imageId={project.imageId}
+                video={project.video}
             />
         </li>
     ))}
