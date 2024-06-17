@@ -1,9 +1,9 @@
 import '../styles/Nav.css'
-import { useState } from 'react';
 
-function Nav(){
 
-    const[openSection, setOpenSection] = useState(null);
+function Nav({ openSection, setOpenSection }){
+
+    
 
     function openMenu(e, id){
         setOpenSection(openSection === id ? null : id)

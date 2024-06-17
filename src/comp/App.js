@@ -12,11 +12,12 @@ import { useState } from 'react';
 function App() {
 
   const [currentCategory, setCategory] = useState([])
+  const[openSection, setOpenSection] = useState(null);
 
   return (
     <div>
     <Banner />
-    <Nav />
+    <Nav openSection={openSection} setOpenSection={setOpenSection} />
     <About />
     <Category
     currentCategory = {currentCategory}
@@ -26,6 +27,7 @@ function App() {
     <Projects 
     currentCategory = {currentCategory}
     setCategory = {setCategory}
+    isOpen={openSection === 'category'}
     />
     <Contact />
     </div>

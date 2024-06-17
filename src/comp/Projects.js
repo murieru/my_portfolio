@@ -1,12 +1,15 @@
 import '../styles/Projects.css'
 import {projectList} from '../data/projectList.js'
 import Project from './Project.js'
+import { useState, useEffect } from 'react';
 
-function Projects({currentCategory, setCategory}){
+function Projects({currentCategory, setCategory, isOpen}){
+
 
     function openClose(id){
         document.getElementById(id).classList.toggle('project-desc-open');
     }
+        
 
 
     return(
@@ -16,10 +19,10 @@ function Projects({currentCategory, setCategory}){
         <ul>
     {projectList.map((project) => (
         <li
-            className={project.category.some(cat => currentCategory.includes(cat)) ? 'project-box' : 'project-box closed'}
+            className={project.category.some(cat => currentCategory.includes(cat)) && isOpen ? 'project-box' : 'project-box closed'}
             key={project.id}
             onClick={() => openClose(project.id)}
-        >
+        >   
             <Project
                 id={project.id}
                 title={project.title}
@@ -31,6 +34,7 @@ function Projects({currentCategory, setCategory}){
                 video={project.video}
                 skills={project.skills}
             />
+           
         </li>
     ))}
 </ul>
