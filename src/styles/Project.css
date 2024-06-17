@@ -20,6 +20,7 @@
 
 .project-desc-box{
     min-width: 400px;
+    max-width: 600px;
     padding: 0px 30px 0px 0px;
 }
 
@@ -43,6 +44,26 @@
     font-weight: 700;
     font-size: 16px;
   }
+
+  .content .desc {
+    list-style: none;
+    font-size: 13px;
+  }
+
+  .skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .skills li{
+    list-style-type: none;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 0px 5px 0px 0px;
+  }
+
 
   @media (max-width: 480px) {
 

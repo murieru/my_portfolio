@@ -4,6 +4,7 @@ import Projects from './Projects';
 import Nav from './Nav';
 import About from './About';
 import Category from './Category';
+import Contact from './Contact';
 import { useState } from 'react';
 
 
@@ -21,10 +22,12 @@ function App() {
     currentCategory = {currentCategory}
     setCategory = {setCategory}
     />
+    
     <Projects 
     currentCategory = {currentCategory}
     setCategory = {setCategory}
     />
+    <Contact />
     </div>
   );
 }

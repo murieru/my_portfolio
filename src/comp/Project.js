@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/Project.css'
 import Carousel from './Carousel'
 
-function Project({id, title, category, date, description, text, imageId, video}){
+function Project({id, title, category, date, description, text, imageId, video, skills}){
 
     const [isClosed, setIsClosed] = useState(true);
 
@@ -19,7 +19,19 @@ function Project({id, title, category, date, description, text, imageId, video})
                 <div className='content'>
                     <span className='date'>[{date}]</span>
                     <br/>
-                    {description}
+                    <span className='desc'> — {description}</span>
+                    <br/>
+                    {text}
+                    <br/>
+                    <br/>
+                    <ul className='skills'>
+                    {skills.map((skill, index) => (<li
+                    key={skill+index}
+                    className='skill'
+                    >[{skill}]</li>
+                ))                    
+                    }
+                    </ul>
                 </div>
             </div>
 

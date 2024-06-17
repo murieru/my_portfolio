@@ -33,18 +33,33 @@ import UNIVERSO_06 from "../assets/00_UNIVERSO_06.jpg"
 import UNIVERSO_07 from "../assets/00_UNIVERSO_07.jpg"
 
 import TIMELINE_01 from "../assets/10_TIMELINE_01.mp4"
+import TIMELINE_02 from "../assets/10_TIMELINE_02.jpg"
+import TIMELINE_03 from "../assets/10_TIMELINE_03.jpg"
 
 export const projectList = [
 
     {
-        id: '001',
+        id: '010',
+        title: 'Dynamic Timeline',
+        category: ['ux/ui', 'code'],
+        date: "2022",
+        description: 'EPFL Extention School Final Project',
+        text: 'Dynamic Timeline is a web app written in Python and JavaScript. It consist in a timeline where you can add, delete or modify events. There is as well a search engine.',
+        imageId: [TIMELINE_02, TIMELINE_03],
+        video: [TIMELINE_01],
+        skills: ['Python', 'JavaScript', 'html', 'CSS', 'UX', 'UI', 'web design']
+    },
+
+    {
+        id: '011',
         title: 'Sonnenstube',
         category: ['photography','code','ux/ui'],
         date: "2012-2020",
         description: 'Archive photography for the independent art space Sonnenstube in Lugano',
         text: 'I have been working for several year to document the art exibithion of Sonnenstube, an indipendent art space in Ticino',
         imageId: [SONENSTUBE_01, SONENSTUBE_02, SONENSTUBE_03, SONENSTUBE_04, SONENSTUBE_05, SONENSTUBE_06, SONENSTUBE_07, SONENSTUBE_08, SONENSTUBE_09,SONENSTUBE_10],
-        video: []
+        video: [],
+        skills: ['photography']
     },
 
     {
@@ -55,7 +70,8 @@ export const projectList = [
         description: 'Visual identity and segnalitic parcour in the beautiful village of Morcote, Ticino',
         text: 'Creation of a visual identity for the Morcote\'s Bienale from the first to the third edition.',
         imageId: [MORCOTE_01, MORCOTE_02, MORCOTE_03, MORCOTE_04, MORCOTE_05, MORCOTE_06, MORCOTE_07],
-        video: []
+        video: [],
+        skills: []
     },
 
     {
@@ -66,7 +82,8 @@ export const projectList = [
         description: 'Monthly contemporary art magazine',
         text: 'Layout and content editing of a monthly print publication',
         imageId: [DARTE_01, DARTE_02, DARTE_03, DARTE_04, DARTE_05],
-        video: []
+        video: [],
+        skills: []
     },
 
     {
@@ -77,18 +94,8 @@ export const projectList = [
         description: 'Monthly supplement of Corriere del Ticino, written by university students',
         text: 'L\'Universo is a monthly publication supplement of Corriere del Ticino. I have created a new layout of a 24 page format ',
         imageId: [UNIVERSO_01, UNIVERSO_02, UNIVERSO_03, UNIVERSO_04, UNIVERSO_05, UNIVERSO_06, UNIVERSO_07],
-        video: []
-    },
-
-    {
-        id: '010',
-        title: 'Dynamic Timeline',
-        category: ['ux/ui', 'code'],
-        date: "2012",
-        description: 'EPFL Extention School Final Project',
-        text: 'Dynamic Timeline is a web app written in Python and JavaScript. It consiost in a timeline where you can add, delete or modify events. There is as well a search engine.',
-        imageId: [DARTE_01, DARTE_02, DARTE_03, DARTE_04, DARTE_05],
-        video: [TIMELINE_01]
+        video: [],
+        skills: []
     },
 
 ];

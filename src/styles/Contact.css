@@ -1,0 +1,47 @@
+#contact{
+    max-height: 0px;
+    font-size: 25px;
+    font-weight: 600;
+    overflow: hidden;
+    transition: 500ms;
+    color: transparent;
+    padding: 0px 30px;
+}
+
+.open{
+    max-height: fit-content !important;
+    padding: 30px !important;
+    border-bottom: 5px solid #000;
+    color: #000 !important;
+    
+}
+
+#contact p{
+    max-width: 80vw;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    line-height: normal;
+    text-align: left;
+    color: inherit;
+    background: transparent;
+}
+
+/*///// MOBILE VERSION /////*/
+
+@media (max-width: 480px) {
+
+    #contact{
+        max-height: 0px;
+        font-size: 20px;
+        font-weight: 600;
+        overflow: hidden;
+        transition: 500ms;
+        color: transparent;
+        padding: 0px 30px;
+    }
+
+}

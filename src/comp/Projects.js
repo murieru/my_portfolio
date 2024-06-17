@@ -26,9 +26,10 @@ function Projects({currentCategory, setCategory}){
                 date={project.date}
                 category={project.category}
                 description={project.description}
-                text={project.test}
+                text={project.text}
                 imageId={project.imageId}
                 video={project.video}
+                skills={project.skills}
             />
         </li>
     ))}

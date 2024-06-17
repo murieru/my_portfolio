@@ -31,6 +31,10 @@
     color: rgb(255, 255, 255);
 }
 
+.selected{
+    background-color: #ff95f5;;
+    color: rgb(255, 255, 255);
+}
 
 /*///// MOBILE VERSION /////*/
 

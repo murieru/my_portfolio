@@ -16,6 +16,20 @@
     
 }
 
+#about p{
+    max-width: 80vw;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    line-height: normal;
+    text-align: left;
+    color: inherit;
+    background: transparent;
+}
+
 /*///// MOBILE VERSION /////*/
 
 @media (max-width: 480px) {

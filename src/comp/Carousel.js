@@ -9,7 +9,7 @@ function Carousel ({id, title, category, date, description, text, imageId, video
     const isMobile = useMediaQuery({ query: '(max-width: 480px)' });
 
     const nextSlide = (e) => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % imageId.length);
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % (imageId.length + video.length - 2));
         e.stopPropagation();
     };
 
@@ -24,7 +24,12 @@ function Carousel ({id, title, category, date, description, text, imageId, video
 
                 {video.map((video, index) => (
 
-                <video key={video} height="300" width="410" onClick={nextSlide} autoPlay loop><source src={video} type="video/mp4" /></video>
+                isMobile ? (
+                <video key={video} style={{ width: '100vw' }}  onClick={nextSlide} autoPlay loop><source src={video} type="video/mp4" /></video>
+                )
+                :(
+                    <video key={video} style={{ height: '100%' }}  onClick={nextSlide} autoPlay loop><source src={video} type="video/mp4" /></video>
+                )
 
                 )
                 )}
