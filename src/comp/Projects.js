@@ -1,7 +1,6 @@
 import '../styles/Projects.css'
 import {projectList} from '../data/projectList.js'
 import Project from './Project.js'
-import { useState, useEffect } from 'react';
 
 function Projects({currentCategory, setCategory, isOpen}){
 
