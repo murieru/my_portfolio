@@ -2,7 +2,7 @@ import '../styles/Banner.css';
 import { useEffect, useState } from 'react';
 
 function Banner() {
-    const welcomeMessage = "Hello, my name is Muriel. I am a Swiss designer.";
+    const welcomeMessage = "Hello, I'm Muriel, a designer from Switzerland. Welcome to my portfolio.";
     const [displayedMessage, setDisplayedMessage] = useState("");
 
     useEffect(() => {

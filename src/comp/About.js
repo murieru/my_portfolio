@@ -5,11 +5,10 @@ function About(){
     return(
         <div id='about'>
             <p>
-            My name is Muriel Hediger, I was born in 1989 in Lausanne. 
-            Currently, I live and work across Lugano, Zürich, and Lausanne. 
-            Since 2013, I have been a freelance designer, initially focusing on graphic design and photography. 
-            Over time, my expertise has evolved to cover UX and UI design, as well as coding. 
-            I am passionate about creating simple and beautiful products and enjoy leading projects from their inception to completion.
+            Hello, my name is Muriel Hediger. I am a Swiss designer born in 1989 in Lausanne. 
+            Nowadays, I live and work mainly in Lugano and Zürich. Since 2013, I have been focusing on graphic design and photography. 
+            Over time, my expertise has expanded to include interaction design, covering UX and UI design, as well as coding. 
+            I love bringing people together and creating powerful teams to develop simple and beautiful products. I enjoy leading projects from inception to completion.
             </p>
         </div>
     )

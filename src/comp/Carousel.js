@@ -9,7 +9,7 @@ function Carousel ({id, title, category, date, description, text, imageId, video
     const isMobile = useMediaQuery({ query: '(max-width: 480px)' });
 
     const nextSlide = (e) => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % (imageId.length + video.length - 2));
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % (imageId.length + video.length));
         e.stopPropagation();
     };
 
@@ -20,7 +20,7 @@ function Carousel ({id, title, category, date, description, text, imageId, video
 
             <span className='left-btn' onClick={nextSlide}><img alt="" src={arrow} /></span>
 
-            <div className='carousel-content'  style={{ transform: `translateX(-${currentIndex * (100/imageId.length)}%)` }}>
+            <div className='carousel-content'  style={{ transform: `translateX(-${currentIndex * (100/(imageId.length + video.length))}%)` }}>
 
                 {video.map((video, index) => (
 
@@ -28,7 +28,7 @@ function Carousel ({id, title, category, date, description, text, imageId, video
                 <video key={video} style={{ width: '100vw' }}  onClick={nextSlide} autoPlay loop><source src={video} type="video/mp4" /></video>
                 )
                 :(
-                    <video key={video} style={{ height: '100%' }}  onClick={nextSlide} autoPlay loop><source src={video} type="video/mp4" /></video>
+                    <video key={video} style={{ height: '100%', width: '300px' }}  onClick={nextSlide} autoPlay loop><source src={video} type="video/mp4" /></video>
                 )
 
                 )

@@ -33,10 +33,37 @@ import UNIVERSO_06 from "../assets/00_UNIVERSO_06.jpg"
 import UNIVERSO_07 from "../assets/00_UNIVERSO_07.jpg"
 
 import TIMELINE_01 from "../assets/10_TIMELINE_01.mp4"
-import TIMELINE_02 from "../assets/10_TIMELINE_02.jpg"
-import TIMELINE_03 from "../assets/10_TIMELINE_03.jpg"
+import TIMELINE_02 from "../assets/10_TIMELINE_02.mp4"
+import TIMELINE_03 from "../assets/10_TIMELINE_03.mp4"
+import TIMELINE_04 from "../assets/10_TIMELINE_04.mp4"
+import TIMELINE_05 from "../assets/10_TIMELINE_05.jpg"
+
+import BELLOSITOMIO_01 from "../assets/11_BELLOSITOMIO_01.mp4"
+import BELLOSITOMIO_02 from "../assets/11_BELLOSITOMIO_02.mp4"
+import BELLOSITOMIO_03 from "../assets/11_BELLOSITOMIO_03.mp4"
+import BELLOSITOMIO_04 from "../assets/11_BELLOSITOMIO_04.mp4"
+
+import RADIOGWEN_01 from "../assets/12_RADIOGWEN_01.mp4"
+import RADIOGWEN_02 from "../assets/12_RADIOGWEN_02.mp4"
+import RADIOGWEN_03 from "../assets/12_RADIOGWEN_03.mp4"
+import RADIOGWEN_04 from "../assets/12_RADIOGWEN_04.mp4"
+import RADIOGWEN_05 from "../assets/12_RADIOGWEN_05.jpg"
+import RADIOGWEN_06 from "../assets/12_RADIOGWEN_06.jpg"
+import RADIOGWEN_07 from "../assets/12_RADIOGWEN_07.jpg"
 
 export const projectList = [
+
+    {
+        id: '012',
+        title: 'Radio Gwendalyn',
+        category: ['ux/ui','graphic design'],
+        date: "2023-2024",
+        description: 'Rebranding, web design & CMS for an indipendent radio station',
+        text: 'Radio Gwendalyn is an independent radio station in Ticino. During 2023, it underwent restructuring to compete for national broadcast status. I worked in the lead team as Art Director and Team Coordinator to successfully achieve the goal of becoming one of the complementary broadcast stations in Switzerland.',
+        imageId: [RADIOGWEN_05,RADIOGWEN_06,RADIOGWEN_07],
+        video: [RADIOGWEN_01, RADIOGWEN_02,RADIOGWEN_03,RADIOGWEN_04],
+        skills: ['art direction', 'ux/ui', 'rebranding', 'web design', 'CMS', 'team lead']
+    },
 
     {
         id: '010',
@@ -44,16 +71,28 @@ export const projectList = [
         category: ['ux/ui', 'code'],
         date: "2022",
         description: 'EPFL Extention School Final Project',
-        text: 'Dynamic Timeline is a web app written in Python and JavaScript. It consist in a timeline where you can add, delete or modify events. There is as well a search engine.',
-        imageId: [TIMELINE_02, TIMELINE_03],
-        video: [TIMELINE_01],
+        text: 'Dynamic Timeline is a web app written in Python and JavaScript. It is thought be used as a study tool. You can add "Events" made by a Title, a Date and a Comment. They are displayed on a timeline regarding their dates. You can edit, delete and search for them.',
+        imageId: [TIMELINE_05],
+        video: [TIMELINE_01, TIMELINE_02, TIMELINE_03, TIMELINE_04],
         skills: ['Python', 'JavaScript', 'html', 'CSS', 'UX', 'UI', 'web design']
+    },
+
+    {
+        id: '013',
+        title: 'Bello  Sito Mio',
+        category: ['ux/ui', 'code'],
+        date: "2021",
+        description: 'Web app to create a custom landing page',
+        text: 'Bello Sito Mio is a  micro CMS, which allowds the client to creat his own landing page extremely easily. There  is one  only template you can cutom by a  control panel.  The page architecture is responsible and thought to work with any kind of content the client can submit',
+        imageId: [],
+        video: [BELLOSITOMIO_01, BELLOSITOMIO_02, BELLOSITOMIO_03, BELLOSITOMIO_04],
+        skills: ['PHP', 'JavaScript', 'html', 'CSS', 'UX', 'UI', 'web design', 'CMS']
     },
 
     {
         id: '011',
         title: 'Sonnenstube',
-        category: ['photography','code','ux/ui'],
+        category: ['photography'],
         date: "2012-2020",
         description: 'Archive photography for the independent art space Sonnenstube in Lugano',
         text: 'I have been working for several year to document the art exibithion of Sonnenstube, an indipendent art space in Ticino',
