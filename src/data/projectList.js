@@ -60,6 +60,17 @@ import STUDIOFOCE_06 from "../assets/13_STUDIOFOCE_06.jpg"
 import STUDIOFOCE_07 from "../assets/13_STUDIOFOCE_07.jpg"
 import STUDIOFOCE_08 from "../assets/13_STUDIOFOCE_08.jpg"
 
+import THEPARDER_01 from "../assets/14_THEPARDER_01.jpg"
+import THEPARDER_02 from "../assets/14_THEPARDER_02.jpg"
+import THEPARDER_03 from "../assets/14_THEPARDER_03.jpg"
+import THEPARDER_04 from "../assets/14_THEPARDER_04.jpg"
+import THEPARDER_05 from "../assets/14_THEPARDER_05.jpg"
+import THEPARDER_06 from "../assets/14_THEPARDER_06.jpg"
+import THEPARDER_07 from "../assets/14_THEPARDER_07.jpg"
+import THEPARDER_08 from "../assets/14_THEPARDER_08.jpg"
+import THEPARDER_09 from "../assets/14_THEPARDER_09.jpg"
+import THEPARDER_10 from "../assets/14_THEPARDER_10.jpg"
+
 export const projectList = [
 
     {
@@ -151,12 +162,24 @@ export const projectList = [
         id: '014',
         title: 'Studio Foce',
         category: ['photography'],
-        date: "2018",
+        date: "2019",
         description: 'Photography of live events for the concerts space Studio Foce in Lugano',
         text: 'I have worked on various events as part of the photography team at Studio Foce in Lugano, a cultural space primarily oriented towards musical performances.',
         imageId: [STUDIOFOCE_01, STUDIOFOCE_02, STUDIOFOCE_03, STUDIOFOCE_04, STUDIOFOCE_05, STUDIOFOCE_06, STUDIOFOCE_07, STUDIOFOCE_08],
         video: [],
         skills: ['photography', 'live']
+    },
+
+    {
+        id: '015',
+        title: 'The Parder',
+        category: ['photography'],
+        date: "2018",
+        description: 'Carte Blache for young photography at Locarno Film Festival',
+        text: 'The Parder offered me the opportunity to create a completely free photography reportage of the 2019 Locarno Film Festival edition.',
+        imageId: [THEPARDER_01, THEPARDER_02, THEPARDER_03, THEPARDER_04, THEPARDER_05, THEPARDER_06, THEPARDER_07, THEPARDER_08, THEPARDER_09, THEPARDER_10],
+        video: [],
+        skills: ['photography']
     }
 
 ];
