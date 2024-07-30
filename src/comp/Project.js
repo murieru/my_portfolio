@@ -6,16 +6,19 @@ function Project({id, title, category, date, description, text, imageId, video, 
 
     const [isClosed, setIsClosed] = useState(true);
 
-    const toggleProject = () => {
+    
+
+    function openClose(id){
+        document.getElementById(id).classList.toggle('project-desc-open')
         setIsClosed(!isClosed);
-    };
+    }
 
     return(
 
-        <div id={id} className="project-desc" onClick={toggleProject}>
+        <div id={id} className="project-desc">
 
             <div className='project-desc-box'>
-                <h3>{title}</h3>                
+                <h3 onClick={() => openClose(id)}>{title}</h3>                
                 <div className='content'>
                     <span className='date'>[{date}]</span>
                     <br/>

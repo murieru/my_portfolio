@@ -2,13 +2,7 @@ import '../styles/Projects.css'
 import {projectList} from '../data/projectList.js'
 import Project from './Project.js'
 
-function Projects({currentCategory, setCategory, isOpen}){
-
-
-    function openClose(id){
-        document.getElementById(id).classList.toggle('project-desc-open');
-    }
-        
+function Projects({currentCategory, setCategory, isOpen}){        
 
 
     return(
@@ -20,7 +14,7 @@ function Projects({currentCategory, setCategory, isOpen}){
         <li
             className={project.category.some(cat => currentCategory.includes(cat)) && isOpen ? 'project-box' : 'project-box closed'}
             key={project.id}
-            onClick={() => openClose(project.id)}
+            
         >   
             <Project
                 id={project.id}
