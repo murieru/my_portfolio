@@ -73,17 +73,6 @@ import THEPARDER_10 from "../assets/14_THEPARDER_10.jpg"
 
 export const projectList = [
 
-    {
-        id: '012',
-        title: 'Radio Gwendalyn',
-        category: ['ux/ui','graphic design'],
-        date: "2023-2024",
-        description: 'Rebranding, web design & CMS for an indipendent radio station',
-        text: 'Radio Gwendalyn is an independent radio station based at Chiasso in Ticino. During 2023, it has been under restructuration to compete for national broadcast status. I worked in the lead team as Art Director and Team Coordinator to successfully achieve the goal of becoming one of the complementary broadcast stations in Switzerland.',
-        imageId: [RADIOGWEN_05,RADIOGWEN_06,RADIOGWEN_07],
-        video: [RADIOGWEN_01, RADIOGWEN_02,RADIOGWEN_03,RADIOGWEN_04],
-        skills: ['art direction', 'ux/ui', 'rebranding', 'web design', 'CMS', 'team lead']
-    },
 
     {
         id: '013',
@@ -91,10 +80,26 @@ export const projectList = [
         category: ['ux/ui', 'code'],
         date: "2021",
         description: 'Web app to create a custom landing page',
-        text: 'Bello Sito Mio is a micro CMS that allows clients to create their own landing pages extremely easily. There is a single template that you can customize through a control panel. The page architecture is responsive and designed to work with any kind of content the client submits.',
+        text: 'Bello Sito Mio is a micro CMS that allows clients to create their own landing pages. There is a single template that you can customize through a control panel.',
         imageId: [],
         video: [BELLOSITOMIO_01, BELLOSITOMIO_02, BELLOSITOMIO_03, BELLOSITOMIO_04],
-        skills: ['PHP', 'JavaScript', 'html', 'CSS', 'UX', 'UI', 'web design', 'CMS']
+        skills: ['PHP', 'JavaScript', 'html', 'CSS', 'UX', 'UI', 'web design', 'CMS'],
+        extLink: 'https://www.behance.net/gallery/204162161/Bello-Sito-Mio',
+        extLinkText: 'Study Case'
+    },
+
+    {
+        id: '012',
+        title: 'Radio Gwendalyn',
+        category: ['ux/ui','graphic design'],
+        date: "2023-2024",
+        description: 'Rebranding, web design & CMS design for an indipendent radio station',
+        text: 'Radio Gwendalyn is an independent radio station based at Chiasso in Ticino. During 2023, it has been under restructuration to compete for national broadcast status. I worked in the lead team as Art Director and Team Coordinator to successfully achieve the goal of becoming one of the complementary broadcast stations in Switzerland.',
+        imageId: [RADIOGWEN_05,RADIOGWEN_06,RADIOGWEN_07],
+        video: [RADIOGWEN_01, RADIOGWEN_02,RADIOGWEN_03,RADIOGWEN_04],
+        skills: ['art direction', 'ux/ui', 'rebranding', 'web design', 'CMS', 'team lead'],
+        extLink: '',
+        extLinkText: ''
     },
 
     {
@@ -106,7 +111,9 @@ export const projectList = [
         text: 'Dynamic Timeline is a web app written in Python and JavaScript. It is designed to be used as a study tool. You can add Events consisting of a Title, a Date, and a Comment. These events are displayed on a timeline according to their dates. You can edit, delete, and search for events.',
         imageId: [TIMELINE_05],
         video: [TIMELINE_01, TIMELINE_02, TIMELINE_03, TIMELINE_04],
-        skills: ['Python', 'JavaScript', 'html', 'CSS', 'UX', 'UI', 'web design']
+        skills: ['Python', 'JavaScript', 'html', 'CSS', 'UX', 'UI', 'web design'],
+        extLink: '',
+        extLinkText: ''
     },
 
     {
@@ -118,7 +125,9 @@ export const projectList = [
         text: 'Creation of a visual identity for the Morcote Biennale from the first to the third edition. This exhibition consists of a contemporary art parcours in the beautiful village of Morcote in Ticino.',
         imageId: [MORCOTE_01, MORCOTE_02, MORCOTE_03, MORCOTE_04, MORCOTE_05, MORCOTE_06, MORCOTE_07],
         video: [],
-        skills: ['visual id', 'layout', 'print']
+        skills: ['visual id', 'layout', 'print'],
+        extLink: '',
+        extLinkText: ''
     },
 
     {
@@ -130,7 +139,9 @@ export const projectList = [
         text: 'Layout and content editing of a monthly print publication about art exhibitions in Ticino',
         imageId: [DARTE_01, DARTE_02, DARTE_03, DARTE_04, DARTE_05],
         video: [],
-        skills: ['layout', 'print', 'content editing']
+        skills: ['layout', 'print', 'content editing'],
+        extLink: '',
+        extLinkText: ''
     },
 
     {
@@ -142,7 +153,9 @@ export const projectList = [
         text: 'L\'Universo is a monthly publication supplement of Corriere del Ticino. I created a new layout for a 24-page format, proposing a complete rebranding.',
         imageId: [UNIVERSO_01, UNIVERSO_02, UNIVERSO_03, UNIVERSO_04, UNIVERSO_05, UNIVERSO_06, UNIVERSO_07],
         video: [],
-        skills: ['visual id', 'rebranding', 'layout', 'print']
+        skills: ['visual id', 'rebranding', 'layout', 'print'],
+        extLink: '',
+        extLinkText: ''
     },
 
 
@@ -155,7 +168,9 @@ export const projectList = [
         text: 'Sonnenstube is an independent art space based in Ticino. I have worked for several years to create a photography archive of the artworks presented during the exhibitions.',
         imageId: [SONENSTUBE_01, SONENSTUBE_02, SONENSTUBE_03, SONENSTUBE_04, SONENSTUBE_05, SONENSTUBE_06, SONENSTUBE_07, SONENSTUBE_08, SONENSTUBE_09,SONENSTUBE_10],
         video: [],
-        skills: ['photography', 'archives']
+        skills: ['photography', 'archives'],
+        extLink: '',
+        extLinkText: ''
     },
 
     {
@@ -167,7 +182,9 @@ export const projectList = [
         text: 'I have worked on various events as part of the photography team at Studio Foce in Lugano, a cultural space primarily oriented towards musical performances.',
         imageId: [STUDIOFOCE_01, STUDIOFOCE_02, STUDIOFOCE_03, STUDIOFOCE_04, STUDIOFOCE_05, STUDIOFOCE_06, STUDIOFOCE_07, STUDIOFOCE_08],
         video: [],
-        skills: ['photography', 'live']
+        skills: ['photography', 'live'],
+        extLink: '',
+        extLinkText: ''
     },
 
     {
@@ -179,7 +196,9 @@ export const projectList = [
         text: 'The Parder offered me the opportunity to create a completely free photography reportage of the 2019 Locarno Film Festival edition.',
         imageId: [THEPARDER_01, THEPARDER_02, THEPARDER_03, THEPARDER_04, THEPARDER_05, THEPARDER_06, THEPARDER_07, THEPARDER_08, THEPARDER_09, THEPARDER_10],
         video: [],
-        skills: ['photography']
+        skills: ['photography'],
+        extLink: '',
+        extLinkText: ''
     }
 
 ];

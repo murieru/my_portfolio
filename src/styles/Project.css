@@ -69,6 +69,25 @@
     cursor: pointer;
    }
 
+   a {
+    color: #ff95f5;
+    text-decoration: underline;
+    fill: #ff95f5;
+   }
+
+   a:hover{
+    color: black;
+    cursor: pointer;
+    fill: black;
+   }
+
+   svg{
+    max-height: 20px;
+    max-width: 20px;
+    margin-right: 7px;
+    fill: inherit;
+   }
+
     @media (max-width: 480px) {
 
       .project-desc{

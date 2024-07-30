@@ -26,6 +26,8 @@ function Projects({currentCategory, setCategory, isOpen}){
                 imageId={project.imageId}
                 video={project.video}
                 skills={project.skills}
+                extLink={project.extLink}
+                extLinkText={project.extLinkText}
             />
            
         </li>
