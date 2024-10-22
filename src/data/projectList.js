@@ -80,12 +80,12 @@ export const projectList = [
         category: ['ux/ui', 'code'],
         date: "2021",
         description: 'Web app to create a custom landing page',
-        text: 'Bello Sito Mio is a micro CMS that allows clients to create their own landing pages. There is a single template that you can customize through a control panel.',
+        text: 'Bello Sito Mio is a micro CMS that allows clients to create their own landing pages made of one single template that you can customize through a control panel.',
         imageId: [],
         video: [BELLOSITOMIO_01, BELLOSITOMIO_02, BELLOSITOMIO_03, BELLOSITOMIO_04],
         skills: ['PHP', 'JavaScript', 'html', 'CSS', 'UX', 'UI', 'web design', 'CMS'],
         extLink: 'https://www.behance.net/gallery/204162161/Bello-Sito-Mio',
-        extLinkText: 'Study Case'
+        extLinkText: 'UX Study Case'
     },
 
     {
@@ -94,7 +94,7 @@ export const projectList = [
         category: ['ux/ui','graphic design'],
         date: "2023-2024",
         description: 'Rebranding, web design & CMS design for an indipendent radio station',
-        text: 'Radio Gwendalyn is an independent radio station based at Chiasso in Ticino. During 2023, it has been under restructuration to compete for national broadcast status. I worked in the lead team as Art Director and Team Coordinator to successfully achieve the goal of becoming one of the complementary broadcast stations in Switzerland.',
+        text: 'Radio Gwendalyn is an independent radio station based at Chiasso in Ticino. During 2023, it has been under restructuration to compete for national broadcast status. I worked in the lead team as Art Director to successfully achieve the goal of becoming one of the complementary broadcast stations in Switzerland.',
         imageId: [RADIOGWEN_05,RADIOGWEN_06,RADIOGWEN_07],
         video: [RADIOGWEN_01, RADIOGWEN_02,RADIOGWEN_03,RADIOGWEN_04],
         skills: ['art direction', 'ux/ui', 'rebranding', 'web design', 'CMS', 'team lead'],
