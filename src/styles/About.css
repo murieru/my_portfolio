@@ -30,6 +30,11 @@
     background: transparent;
 }
 
+#about a{
+    color: #ff95f5;
+    border-bottom: 2px solid #ff95f5;
+}
+
 /*///// MOBILE VERSION /////*/
 
 @media (max-width: 480px) {
