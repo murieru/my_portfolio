@@ -1,6 +1,5 @@
 import '../styles/App.css';
 import Banner from './Banner';
-import Projects from './Projects';
 import Nav from './Nav';
 import About from './About';
 import Contact from './Contact';
@@ -17,7 +16,6 @@ function App() {
     <Banner />
     <Nav openSection={openSection} setOpenSection={setOpenSection} />
     <About />    
-    <Projects />
     <Contact />
     </div>
   );
