@@ -23,7 +23,6 @@ function Nav({ openSection, setOpenSection }){
         <div id='nav'>
             <ul>
                 <li className={ openSection === 'about' ? 'selected': ''} onClick={(e) => openMenu(e, 'about')}>about</li>
-                <li className={ openSection === 'category' ? 'selected': ''} onClick={(e) => openMenu(e, 'category')}>projects</li>
                 <li className={ openSection === 'contact' ? 'selected': ''} onClick={(e) => openMenu(e, 'contact')}>contact</li>
             </ul>
         </div>
