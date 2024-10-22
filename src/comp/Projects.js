@@ -4,7 +4,7 @@ import {projectList} from '../data/projectList.js'
 import Project from './Project.js'
 */
 
-function Projects({currentCategory, setCategory, isOpen}){        
+function Projects(){        
 
 
     return(
